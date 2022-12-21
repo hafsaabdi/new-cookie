@@ -1,5 +1,6 @@
 void population() {
   float centerX=appWidth*1/2, centerY=appHeight*1/2;
+  float
   startWidth = appWidth*1/2;
   startHeight = appHeight*1/10;
   startX = centerX - startWidth*1/2;
@@ -35,10 +36,10 @@ void population() {
   startButtonImageRectWidth= startButtonWidth; //original needs debugging to adjust
   startButtonImageRectHeight= startButtonHeight;
   //
-  oneX = startX;
-  oneY = startY;
-  oneWidth = appWidth * 1/3;
-  oneHeight = appHeight * 1/3;
+  oneImageX = startX;
+  oneImageY = startY;
+  oneImageWidth = appWidth * 1/3;
+  oneImageHeight = appHeight * 1/3;
   //
   lineX = appWidth * 1/3;
   lineY = appHeight;
