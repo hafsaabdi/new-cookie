@@ -3,15 +3,15 @@ PImage restartImage, restartButtonImage;
 PImage startImage, startButtonImage;
 //
 void imageSetup() { //image population
-  backgroundImage=loadImage("../Images Used/all of them.jfif");
-  quitButtonImage = loadImage("../Images Used/jo.jfif");
-  startButtonImage = loadImage("../Images Used/nicholas.jfif");
+  backgroundImage=loadImage("../Images/all of them.jfif");
+  quitButtonImage = loadImage("../Images/jo.jfif");
+  startButtonImage = loadImage("../Images/nicholas.jfif");
   //quitButtonImage is loaed here if different
 }
 //End imageSetup
 //
 void quitButtonImage() {
-  quitButtonImage = loadImage("../Images Used/jo.jfif");
+  quitButtonImage = loadImage("../Images/jo.jfif");
   //rectangles largest dimension
 
   //images other dimension is scaled
