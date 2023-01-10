@@ -43,7 +43,6 @@ void restartButtonText() {
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
   int size = 30; //Change the number until it fits
   textFont(font, size); 
-  text( restart, quitX2, quitY2, quitWidth2, quitHeight2); 
   noFill();
 }//End restartButtonText
 //
@@ -52,8 +51,7 @@ void startButtonText() {
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
   int size = 30; //Change the number until it fits
-  textFont(font, size); 
-  text( start, startButtonX, startButtonY, startButtonWidth, startButtonHeight); 
+  textFont(font, size);  
   noFill();
 }//End startButtonText
 //End Text Subprogram

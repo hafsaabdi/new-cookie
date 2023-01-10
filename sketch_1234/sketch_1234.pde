@@ -18,7 +18,7 @@ void setup() {
   display(); //Purpose: CANVAS fits in monitor & dimension size is known
   //smaller & larger dimension from Display Algorithm
   println("Smaller Dimension is", smallerDimension, "Larger Dimension is", largerDimension);
-  population(); //Values based on DISPLAY
+  //Values based on DISPLAY
   textSetup();
   imageSetup();
 }//End setup
