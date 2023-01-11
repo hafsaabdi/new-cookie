@@ -1,7 +1,7 @@
 PImage backgroundImage, quitButtonImage;
 //
 void imageSetup() {//Image Population
-  backgroundImage=loadImage("../Images/thick-chocolate-chip-cookies-recipe-14-scaled.jpg");
+  backgroundImage=loadImage("../team/Jo.jpg");
   //quitButtonImage is loaded here if different
 }//End imageSetup
 //
