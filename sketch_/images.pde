@@ -1,20 +1,19 @@
 PImage backgroundImage, quitButtonImage;
+PImage ImageX, ImageY, ImageA, ImageB, ImageC, ImageD, ImageE, ImageF, ImageG;
 //
 void imageSetup() {//Image Population
-  backgroundImage=loadImage("../team/Jo.jpg");
+  backgroundImage=loadImage("../all of them/all of them.jpg");
+  ImageX=loadImage("../team/k.jfif");
+  ImageY=loadImage("../team/fuma.jfif");
+  ImageA=loadImage("../team/nicholas.jpg");
+  ImageB=loadImage("../team/ej.jfif");
+  ImageC=loadImage("../team/yuma.jpg");
+  ImageD=loadImage("../team/jo.jfif");
+  ImageE=loadImage("../team/harua.jfif");
+  ImageF=loadImage("../team/taki.jfif");
+  ImageG=loadImage("../team/maki.jfif");
   //quitButtonImage is loaded here if different
 }//End imageSetup
-//
-void imageTintNightMode() {
-  //Control night mode, colour, with IF 
-  //if (nightMode==true) tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);
-  //if (nightMode==false) tint(tintDayMode, tintDayModeOpacity);
-  if ( nightMode==true ) {
-    tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);
-  } else {
-    tint(tintDayMode, tintDayModeOpacity);
-  }
-}//End imageTintNightMode
 //
 void quitButtonImage() {
   quitButtonImage = backgroundImage;
@@ -40,7 +39,6 @@ void quitButtonImage() {
     //Debugging: x-value must be centered
     float centerX=appWidth*1/2;
     quitButtonImageRectX = centerX - quitButtonImageWidth_Adjusted * 1/2;
-    imageTintNightMode();
     image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageWidth_Adjusted, quitButtonImageHeight_Calculated );
     //
   } else {//Portrait
@@ -55,7 +53,6 @@ void quitButtonImage() {
     //Debugging: x-value must be centered
     float centerX=appWidth*1/2;
     quitButtonImageRectX = centerX - quitButtonImageWidth_Calculated * 1/2;
-    imageTintNightMode();
     image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageWidth_Calculated, quitButtonImageHeight_Adjusted );
     //
   }

@@ -1,13 +1,9 @@
-String spaceBar = "press space to start!";
-String quit = "quit";
-String restart = "restart";
-String start = "start";
+String spaceBar = "Press the Space Bar to Continue";
+String quit = "Quit";
 PFont font;
-
 void textSetup() {
-  //Minimum expectation is single font
+  //Minimum Expectation is SINGLE FONT
   //
-  //One FONT only here
   //Fonts from OS (Operating System)
   // String[] fontList = PFont.list(); //To list all fonts available on OS
   //printArray(fontList); //For listing all possible fonts to choose from, then createFont
@@ -17,41 +13,25 @@ void textSetup() {
 //
 void spaceBarText() {
   //rect(startX, startY, startWidth, startHeight);
-  fill(pink); //Ink, hexidecimal copied from Color Selector
+  fill(purple); //Ink, hexidecimal copied from Color Selector
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
-  int size = 35; //Change the number until it fits
+  int size = 20; //Change the number until it fits
   textFont(font, size); 
-  text( spaceBar, startX, startY, startWidth, startHeight); 
-  fill(resetDefaultInk);
+  text( spaceBar, startX, startY, startWidth, startHeight );
+  noFill();
 }//End spaceBarText
 //
 void quitButtonText() {
-  //rect( quitX, quitY, quitWidth, quitHeight ); 
-  fill(pink); //Ink, hexidecimal copied from Color Selector
+  //rect( quitX, quitY, quitWidth, quitHeight );
+  color ink = (nightMode==true) ? #7D7D28 : purple; //Note: hexidecimal example,
+  fill(ink); //Ink, hexidecimal copied from Color Selector
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
-  int size = 30; //Change the number until it fits
+  int size = 33; //Change the number until it fits
   textFont(font, size); 
-  text( quit, quitX, quitY, quitWidth, quitHeight); 
+  text( quit, quitX, quitY, quitWidth, quitHeight );
   noFill();
-}//End quitButtonText
+}//End spaceBarText
 //
-void restartButtonText() {
-  fill(pink); //Ink, hexidecimal copied from Color Selector
-  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
-  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
-  int size = 30; //Change the number until it fits
-  textFont(font, size); 
-  noFill();
-}//End restartButtonText
-//
-void startButtonText() {
-  fill(pink); //Ink, hexidecimal copied from Color Selector
-  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
-  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
-  int size = 30; //Change the number until it fits
-  textFont(font, size);  
-  noFill();
-}//End startButtonText
 //End Text Subprogram

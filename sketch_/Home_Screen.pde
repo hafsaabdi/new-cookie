@@ -1,15 +1,26 @@
 float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
 float quitX, quitY, quitWidth, quitHeight;
 float quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight;
+float quitButtonImageRectA,quitButtonImageRectB,quitButtonImageRectC,quitButtonImageRectD,quitButtonImageRectE,quitButtonImageRectF,quitButtonImageRectG;
 int tintDayMode=255, tintDayModeOpacity=50;
 //Blue might change, starts at zero
 int tintRed=64, tintGreen=64, tintBlue=0, tintNightModeOpacity=85;
 //
 void homeScreen() { //Exists in VOID DRAW
   println("Arrived at Home Screen"); //Testing for Splash Screen Start Button working
-  /* Home Screen Expectations
-   - Background image using tint()
-   - 9 evenly spaced rectangles, Assignment #3
+  //
+  RectNightMode();
+  fill(#C6AF84);
+  rect(10,0,300,300);
+  rect(10,333,300,300);
+  rect(10,666,300,300);
+   rect(334,0,300,300);
+  rect(334,333,300,300);
+  rect(334,666,300,300);
+  rect(667,0,300,300);
+  rect(667,333,300,300);
+  rect(667,666,300,300);
+/*  - 9 evenly spaced rectangles, Assignment #3
    - Quit Button and Reset Button (Splash Screen Start Button)
    - In each: image, text, 2D Shape, Button
    - Narartive through the 9 rectangels
@@ -29,7 +40,6 @@ void homeScreen() { //Exists in VOID DRAW
     rect( quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight );
     noFill();
     stroke(1); //reset dedault
-    imageTintNightMode();
     quitButtonImage(); //In Aspect Ratio
   } else { 
     noStroke();
@@ -39,7 +49,7 @@ void homeScreen() { //Exists in VOID DRAW
     stroke(1); //reset dedault
     quitButtonText();
   }
-  //rect( quitX, quitY, quitWidth, quitHeight );
+ //rect( quitX, quitY, quitWidth, quitHeight );
   //
 }//End homeScreen
 //
@@ -53,7 +63,15 @@ void backgroundWhiteScreen() {
 //
 void backgroundImage() {
   backgroundWhiteScreen();
-  imageTintNightMode();
+  //Control night mode, colour, with IF 
+  //if (nightMode==true) tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);
+  //if (nightMode==false) tint(tintDayMode, tintDayModeOpacity);
+  if ( nightMode==true ) {
+    tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);
+  } else {
+    tint(tintDayMode, tintDayModeOpacity);
+  }
+  //End Night Mode Control
   image(backgroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
   //image with tint()
 }//End backgroundImage

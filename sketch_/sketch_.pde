@@ -3,7 +3,7 @@ int appWidth, appHeight, largerDimension, smallerDimension;
 Boolean OS_On=false, splashScreenStart=false;
 Boolean nightMode=false; //bonus1: populate with system clock
 //more bonus, gr 11: use API-sunrise for system clock start, API-sunset for system clock stop
-color resetDefaultInk=#FFFFFF, white=#FFFFFF, pink=#F50CA8;
+color resetDefaultInk=#FFFFFF, white=#FFFFFF, purple=#FF00FF;
 /* Night Mode Comment
  Purple not for Night Mode, full BLUE
  resetDefaultInk is Night Mode friendly
@@ -18,7 +18,7 @@ void setup() {
   display(); //Purpose: CANVAS fits in monitor & dimension size is known
   //smaller & larger dimension from Display Algorithm
   println("Smaller Dimension is", smallerDimension, "Larger Dimension is", largerDimension);
-  //Values based on DISPLAY
+  population(); //Values based on DISPLAY
   textSetup();
   imageSetup();
 }//End setup
@@ -28,7 +28,6 @@ void draw() {
   if ( OS_On==true && splashScreenStart==false ) splashScreen(); //OS Level MOUSE Click
   if ( splashScreenStart==true ) homeScreen();
   //
- 
 }//End draw
 //
 void keyPressed() {
@@ -45,10 +44,11 @@ void keyPressed() {
     if (nightMode==false) {
       nightMode = true;
       backgroundImage();
-      //must redraw all recatngles too
+      //Reminder: must redraw all of rectangles too, and Home Screen
   } else {
     nightMode = false;
     backgroundImage();
+     //Reminder: must redraw all of rectangles too, and Home Screen
   }
   }
 }//End keyPressed
