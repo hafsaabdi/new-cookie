@@ -33,5 +33,7 @@ void quitButtonText() {
   text( quit, quitX, quitY, quitWidth, quitHeight );
   noFill();
 }//End spaceBarText
+void textCode() {
+}//End textCode()
 //
 //End Text Subprogram

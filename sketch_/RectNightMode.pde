@@ -5,5 +5,4 @@ void RectNightMode() {
     tint(tintDayMode, tintDayModeOpacity);
   }
 }
-Footer
-© 2023 GitHub, Inc.
+//End RectNightMode

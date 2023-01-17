@@ -1,8 +1,6 @@
-PImage backgroundImage, quitButtonImage;
-PImage ImageX, ImageY, ImageA, ImageB, ImageC, ImageD, ImageE, ImageF, ImageG;
+PImage ImageX, ImageY, ImageA, ImageB, ImageC, ImageD, ImageE, ImageF, ImageG,quitButtonImage;
 //
 void imageSetup() {//Image Population
-  backgroundImage=loadImage("../all of them/all of them.jpg");
   ImageX=loadImage("../team/k.jfif");
   ImageY=loadImage("../team/fuma.jfif");
   ImageA=loadImage("../team/nicholas.jpg");
@@ -15,11 +13,9 @@ void imageSetup() {//Image Population
   //quitButtonImage is loaded here if different
 }//End imageSetup
 //
-void quitButtonImage() {
-  quitButtonImage = backgroundImage;
-  //
+void quitButtonImage() {  //
   //Image Dimensions
-  float quitButtonImageWidth=1707, quitButtonImageHeight=2560;
+  float quitButtonImageWidth=200, quitButtonImageHeight=200;
   //rect( quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight );
   //Following vars must be populated or debugger error
   float quitButtonImageWidth_Adjusted=0.0, quitButtonImageHeight_Adjusted=0.0;

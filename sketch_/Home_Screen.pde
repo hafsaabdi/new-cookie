@@ -1,4 +1,4 @@
-float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
+float ImageWidth, ImageHeight;
 float quitX, quitY, quitWidth, quitHeight;
 float quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight;
 float quitButtonImageRectA,quitButtonImageRectB,quitButtonImageRectC,quitButtonImageRectD,quitButtonImageRectE,quitButtonImageRectF,quitButtonImageRectG;
@@ -11,23 +11,17 @@ void homeScreen() { //Exists in VOID DRAW
   //
   RectNightMode();
   fill(#C6AF84);
-  rect(10,0,300,300);
-  rect(10,333,300,300);
-  rect(10,666,300,300);
-   rect(334,0,300,300);
-  rect(334,333,300,300);
-  rect(334,666,300,300);
-  rect(667,0,300,300);
-  rect(667,333,300,300);
-  rect(667,666,300,300);
-/*  - 9 evenly spaced rectangles, Assignment #3
-   - Quit Button and Reset Button (Splash Screen Start Button)
-   - In each: image, text, 2D Shape, Button
-   - Narartive through the 9 rectangels
-   - See Case Study
-   - Note: must have one image with aspect ratio
-   */
+  rect(0,0,500,500);
+  rect(0,333,500,500);
+  rect(0,666,500,500);
+  rect(500,0,500,500);
+  rect(500,333,500,500);
+  rect(500,666,500,500);
+  rect(1000,0,500,500);
+  rect(1000,333,500,500);
+  rect(1000,666,500,500);
 //
+
 //Quit Button, move to Button Subprogram
   if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) {
     /*
@@ -40,7 +34,7 @@ void homeScreen() { //Exists in VOID DRAW
     rect( quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight );
     noFill();
     stroke(1); //reset dedault
-    quitButtonImage(); //In Aspect Ratio
+    quitButtonImage(); //
   } else { 
     noStroke();
     fill(white);
@@ -52,28 +46,5 @@ void homeScreen() { //Exists in VOID DRAW
  //rect( quitX, quitY, quitWidth, quitHeight );
   //
 }//End homeScreen
-//
-void backgroundWhiteScreen() {
-  fill(white);
-  noStroke();
-  rect( backgroundX, backgroundY, backgroundWidth, backgroundHeight ); //white colour
-  stroke(1); //Reset: 1 pixel
-  fill(white); //Reset: white
-}//End backgroundWhiteScreen
-//
-void backgroundImage() {
-  backgroundWhiteScreen();
-  //Control night mode, colour, with IF 
-  //if (nightMode==true) tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);
-  //if (nightMode==false) tint(tintDayMode, tintDayModeOpacity);
-  if ( nightMode==true ) {
-    tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);
-  } else {
-    tint(tintDayMode, tintDayModeOpacity);
-  }
-  //End Night Mode Control
-  image(backgroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
-  //image with tint()
-}//End backgroundImage
 //
 //End Home Screen Subprogram

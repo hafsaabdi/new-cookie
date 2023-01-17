@@ -5,11 +5,6 @@ void population() {
   startX = centerX - startWidth*1/2;
   startY = centerY - startHeight*1/2;
   //
-  backgroundX = appWidth * 0;
-  backgroundY = appHeight * 0;
-  backgroundWidth = appWidth;
-  backgroundHeight = appHeight;
-  //
   quitWidth = appWidth * 1/9; //Origonal 1/3, debugging to adjust
   quitHeight = appHeight * 1/10;
   quitX = centerX - quitWidth * 1/2;
@@ -20,6 +15,12 @@ void population() {
   quitButtonImageRectWidth = quitWidth * 5/6; //Origonal needs debugging to adjust
   quitButtonImageRectHeight = quitHeight;
   //
+  drawingSurfaceX = width*0;
+  drawingSurfaceY = height*0;
+  drawingSurfaceWidth = width*3/4;
+  drawingSurfaceHeight = height*4/5;
+  //
+  drawingDiameter = width*1/100; //Needed for ellipses
 }//End Population
 //
 //ENd Population Subprogram
