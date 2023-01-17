@@ -1,5 +1,5 @@
 float ImageWidth, ImageHeight;
-float quitX, quitY, quitWidth, quitHeight;
+float quitX, quitY,quitA,quitB,quitC,quitD, quitWidth, quitHeight;
 float quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight;
 float quitButtonImageRectA,quitButtonImageRectB,quitButtonImageRectC,quitButtonImageRectD,quitButtonImageRectE,quitButtonImageRectF,quitButtonImageRectG;
 int tintDayMode=255, tintDayModeOpacity=50;
@@ -10,7 +10,7 @@ void homeScreen() { //Exists in VOID DRAW
   println("Arrived at Home Screen"); //Testing for Splash Screen Start Button working
   //
   RectNightMode();
-  fill(#C6AF84);
+  fill(#4C7F8E);
   rect(0,0,500,500);
   rect(0,333,500,500);
   rect(0,666,500,500);
@@ -31,7 +31,6 @@ void homeScreen() { //Exists in VOID DRAW
     */
     noStroke();
     fill(white);
-    rect( quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight );
     noFill();
     stroke(1); //reset dedault
     quitButtonImage(); //

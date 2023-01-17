@@ -1,10 +1,10 @@
 PImage ImageX, ImageY, ImageA, ImageB, ImageC, ImageD, ImageE, ImageF, ImageG,quitButtonImage;
 //
 void imageSetup() {//Image Population
-  ImageX=loadImage("../team/k.jfif");
-  ImageY=loadImage("../team/fuma.jfif");
-  ImageA=loadImage("../team/nicholas.jpg");
-  ImageB=loadImage("../team/ej.jfif");
+  ImageX=loadImage("../k/k.jfif");
+  ImageY=loadImage("../fuma/fuma.jfif");
+  ImageA=loadImage("../nicholas/nicholas.jpg");
+  ImageB=loadImage("../ej/ej.jfif");
   ImageC=loadImage("../team/yuma.jpg");
   ImageD=loadImage("../team/jo.jfif");
   ImageE=loadImage("../team/harua.jfif");
